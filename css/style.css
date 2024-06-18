@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    background-color: #52beff;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(82, 190, 255, 0.5);
+    border: 2px solid rgba(82, 190, 255, 0.5); 
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+nav ul li a:hover {
+    background-color: rgba(64, 152, 255, 0.5); 
+    border-color: rgba(64, 152, 255, 0.5); 
+}
+
+.snoopy {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+}
+
+main {
+    padding: 10px; 
+    text-align: center;
+    flex: 1; 
+    overflow: auto;
+}
+
+.content {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.image-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+    border-radius: 10px;
+    margin: 5px; 
+    border: 2px solid transparent; 
+    transition: transform 0.3s ease-in-out, border-color 0.3s; 
+}
+
+.image-container img:hover {
+    transform: translateY(-5px); 
+    border-color: #ff2258; 
+}
+
+footer {
+    background-color: #ff2258;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    flex-shrink: 0; 
+}
+
+.fundo {
+    width: 30px; 
+    height: auto;
+    z-index: 0; 
+}
